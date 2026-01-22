@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    // 基礎設定
+    "target": "ES2020",
+    "module": "commonjs",
+    
+    // 模組解析
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    
+    // 類型檢查
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    
+    // 輸出設定
+    "outDir": "./dist",
+    "rootDir": "./",
+    "sourceMap": true,
+    
+    // 移除或修改有問題的選項
+    "isolatedModules": false,  // 改為 false
+    "verbatimModuleSyntax": false,  // 確保是 false
+    "noUncheckedSideEffectImports": false,  // 改為 false 或移除
+    
+    // 可選：為了更好的開發體驗
+    "resolveJsonModule": true,
+    "declaration": false,
+    "declarationMap": false,
+    "noUncheckedIndexedAccess": false,  // 改為 false
+    "exactOptionalPropertyTypes": false  // 改為 false
+  },
+  "include": ["*.ts", "**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
